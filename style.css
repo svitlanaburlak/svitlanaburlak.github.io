@@ -1,21 +1,79 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 10px;
     background-color: bisque;
+    display: flex;
+    flex-direction: row;
+}
+
+.left_side{
+    width: 20%; /*20wv*/
+    min-width: 100px;
+    height: 100vh;
+    background-color: rgb(0, 0, 63);
+    color: bisque;
+    padding: 10px;
+    line-height: 2em;
+}
+
+.left_side__title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.left_side__img {
+    width: 25px;
+}
+
+.left_side li {
+    font-size: 18px;
+}
+
+.left_side a {
+    text-decoration: none;
+    color:bisque;
+}
+
+.left_side a:hover {
+    color: white;
+}
+
+
+
+
+.right_side {
+    width: 80%;
+    min-width: 200px;
+    padding: 20px;
+    line-height: 2em;
+    color: rgb(0, 0, 63);
 }
 
 h1 {
     font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 10px;;
 }
 
-h2 { 
+/*h2 { 
     font-size: 30px;
-}
+}*/
 
 h3 { 
     font-size: 20px;
+    text-decoration: underline;
 }
 
 h4 { 
     font-size: 15px;
+    text-decoration: underline;
+}
+
+.right_side a {
+    text-decoration: none;
+    color: rgb(0, 0, 63);
+}
+
+.right_side a:hover {
+    color: black;
+    background-color: gray;
 }
