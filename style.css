@@ -32,6 +32,10 @@ body {
     transform: scale(1.1);
 }
 
+#photo_cv {
+    border-radius: 50%;
+}
+
 .left_side__img {
     width: 25px;
     transition: 2s;
