@@ -6,6 +6,14 @@ body {
     /* margin: 5px; */
 }
 
+/* @media (min-width: 1024px)
+{ 
+    body {
+        width: 900px;
+        margin: auto;
+    }
+} */
+
 h1 {
     font-size: 48px;
     font-weight: bold;
@@ -14,6 +22,7 @@ h1 {
 h2 {
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
 }
 
 h3 {
@@ -23,7 +32,7 @@ h3 {
 /* THEME DARK */
 .theme-dark {
     background-color: darkblue;
-    color:bisque;
+    color: bisque;
 }
 
 button {
@@ -45,6 +54,15 @@ button {
     display:flex;
     flex-direction: row-reverse; 
     justify-content: space-evenly;
+}
+
+@media (max-width: 768px)
+{ 
+    #header_intro {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* PROFILE IMAGE */
@@ -88,40 +106,66 @@ button {
 
 /* MAIN */
 
-main {
-    margin: 10px
-}
-
 #main_formation {
     display: flex;
     flex-direction: column;
     text-align: justify;
+   
+}
+
+#main_experience {
+
+}
+
+#main_skills {
     
 }
 
+.main_skills--list{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
+.main_skills--list img{
+    width: 50px;
+}
 
+#main_hobby {
+    /* background-color: rgb(147, 224, 235); */
+    margin-bottom: 0%;
+}
 
+#main_hobby img {
+    width: 50px;
+}
 
-
-
+#main_hobby ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 
 /* FOOTER */
 footer {
-    margin: 10px
+    background-color: rgb(198, 150, 243);
+    padding: 10px;
 }
-.footer_contacts {
+.footer_contacts a {
    text-decoration: none;
+   color:blue;
 }
 
+.footer_contacts li {
+    text-align: center;
+}
 
-
-
-
-img {
-    display: inline;
-    width: 10%;
+.footer_contacts img {
+    /* display: inline; */
+    width: 40px;
 }
 
 /* scroll animations */
