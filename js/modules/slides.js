@@ -12,8 +12,7 @@ const slides = {
     
     init: function(){
         // add event listener to scroll
-        window.addEventListener("scroll", slides.reveal);
-        
+        window.addEventListener("scroll", slides.reveal);  
     },
 
     reveal: function () {

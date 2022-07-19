@@ -1,33 +1,77 @@
 body {
     background-color: bisque;
-    font-family: 'Great Vibes', cursive;
-    /* font-family: 'The Nautigal', cursive; */
-    font-weight: bold;
-    font-size: 50px;
-    padding: 3px;
-    margin: 5px;
+    font-family: 'Niconne', cursive;
+    font-size: 32px;
+    /* padding: 10px; */
+    /* margin: 5px; */
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+/* THEME DARK */
 .theme-dark {
     background-color: darkblue;
     color:bisque;
 }
 
+button {
+    /* background-color: transparent; */
+    padding: 0;
+    margin: 0 ;
+}
+
+/* HEADER */
 .header {
     display: flex;
     flex-direction: column;
-    padding: 5px;
 }
 
 #header_intro {
     text-align: center;
+    background-color: rgb(195, 245, 228); 
+    padding: 10px;  
+    display:flex;
+    flex-direction: row-reverse; 
+    justify-content: space-evenly;
 }
+
+/* PROFILE IMAGE */
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+  
+.header img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+/* NAVBAR STICKY */
 
 #header_nav {
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: space-around;
+    overflow: hidden;
+    background-color: #333;
 }
 
 #header_nav a{
@@ -36,15 +80,39 @@ body {
     margin-right: 10px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* MAIN */
+
+main {
+    margin: 10px
+}
+
 #main_formation {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
+    
 }
 
-#main_formation div {
-    padding: 2px;
-    margin: 3px;
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    margin: 10px
+}
+.footer_contacts {
+   text-decoration: none;
 }
 
 
@@ -52,10 +120,12 @@ body {
 
 
 img {
+    display: inline;
     width: 10%;
 }
 
 /* scroll animations */
+/* add to every section of menu, id */
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -67,3 +137,4 @@ img {
     transform: translateY(0);
     opacity: 1;
 }
+/* scroll animations */
